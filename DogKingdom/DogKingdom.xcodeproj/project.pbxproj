@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* App */
+		100000000000000000000001 /* DogKingdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* DogKingdomApp.swift */; };
+
+		/* Models */
+		100000000000000000000002 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* Territory.swift */; };
+		100000000000000000000003 /* PathPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* PathPoint.swift */; };
+		100000000000000000000004 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* User.swift */; };
+
+		/* Views */
+		100000000000000000000005 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000005 /* MainMapView.swift */; };
+		100000000000000000000006 /* TerritoryOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000006 /* TerritoryOverlay.swift */; };
+		100000000000000000000007 /* ClaimingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* ClaimingHUD.swift */; };
+		100000000000000000000008 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* AuthView.swift */; };
+		100000000000000000000009 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* ProfileView.swift */; };
+
+		/* ViewModels */
+		100000000000000000000010 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* MapViewModel.swift */; };
+		100000000000000000000011 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000011 /* LocationViewModel.swift */; };
+		100000000000000000000012 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* AuthViewModel.swift */; };
+
+		/* Services */
+		100000000000000000000013 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* LocationService.swift */; };
+		100000000000000000000014 /* PolygonDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* PolygonDetector.swift */; };
+		100000000000000000000015 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* FirebaseService.swift */; };
+		100000000000000000000016 /* TerritoryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* TerritoryValidator.swift */; };
+
+		/* Utilities */
+		100000000000000000000017 /* GeoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000017 /* GeoUtils.swift */; };
+
+		/* Resources */
+		100000000000000000000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000018 /* Assets.xcassets */; };
+
+		/* Firebase */
+		100000000000000000000019 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 300000000000000000000001 /* FirebaseAuth */; };
+		100000000000000000000020 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 300000000000000000000002 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		/* App */
+		200000000000000000000001 /* DogKingdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogKingdomApp.swift; sourceTree = "<group>"; };
+
+		/* Models */
+		200000000000000000000002 /* Territory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Territory.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* PathPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathPoint.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+
+		/* Views */
+		200000000000000000000005 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
+		200000000000000000000006 /* TerritoryOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerritoryOverlay.swift; sourceTree = "<group>"; };
+		200000000000000000000007 /* ClaimingHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimingHUD.swift; sourceTree = "<group>"; };
+		200000000000000000000008 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		200000000000000000000009 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+
+		/* ViewModels */
+		200000000000000000000010 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		200000000000000000000011 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		200000000000000000000012 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+
+		/* Services */
+		200000000000000000000013 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		200000000000000000000014 /* PolygonDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonDetector.swift; sourceTree = "<group>"; };
+		200000000000000000000015 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* TerritoryValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerritoryValidator.swift; sourceTree = "<group>"; };
+
+		/* Utilities */
+		200000000000000000000017 /* GeoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUtils.swift; sourceTree = "<group>"; };
+
+		/* Resources */
+		200000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200000000000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		/* Product */
+		400000000000000000000001 /* DogKingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogKingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		500000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000019 /* FirebaseAuth in Frameworks */,
+				100000000000000000000020 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		600000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000002 /* DogKingdom */,
+				600000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		600000000000000000000002 /* DogKingdom */ = {
+			isa = PBXGroup;
+			children = (
+				600000000000000000000004 /* App */,
+				600000000000000000000005 /* Models */,
+				600000000000000000000006 /* Views */,
+				600000000000000000000007 /* ViewModels */,
+				600000000000000000000008 /* Services */,
+				600000000000000000000009 /* Utilities */,
+				200000000000000000000018 /* Assets.xcassets */,
+				200000000000000000000019 /* Info.plist */,
+			);
+			path = DogKingdom;
+			sourceTree = "<group>";
+		};
+		600000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000001 /* DogKingdom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		600000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000001 /* DogKingdomApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		600000000000000000000005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000002 /* Territory.swift */,
+				200000000000000000000003 /* PathPoint.swift */,
+				200000000000000000000004 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		600000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000005 /* MainMapView.swift */,
+				200000000000000000000006 /* TerritoryOverlay.swift */,
+				200000000000000000000007 /* ClaimingHUD.swift */,
+				200000000000000000000008 /* AuthView.swift */,
+				200000000000000000000009 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		600000000000000000000007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000010 /* MapViewModel.swift */,
+				200000000000000000000011 /* LocationViewModel.swift */,
+				200000000000000000000012 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		600000000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000013 /* LocationService.swift */,
+				200000000000000000000014 /* PolygonDetector.swift */,
+				200000000000000000000015 /* FirebaseService.swift */,
+				200000000000000000000016 /* TerritoryValidator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		600000000000000000000009 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000017 /* GeoUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700000000000000000000001 /* DogKingdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800000000000000000000003 /* Build configuration list for PBXNativeTarget "DogKingdom" */;
+			buildPhases = (
+				500000000000000000000002 /* Sources */,
+				500000000000000000000001 /* Frameworks */,
+				500000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogKingdom;
+			packageProductDependencies = (
+				300000000000000000000001 /* FirebaseAuth */,
+				300000000000000000000002 /* FirebaseFirestore */,
+			);
+			productName = DogKingdom;
+			productReference = 400000000000000000000001 /* DogKingdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					700000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 800000000000000000000001 /* Build configuration list for PBXProject "DogKingdom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 600000000000000000000001;
+			packageReferences = (
+				A00000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 600000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700000000000000000000001 /* DogKingdom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		500000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		500000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* DogKingdomApp.swift in Sources */,
+				100000000000000000000002 /* Territory.swift in Sources */,
+				100000000000000000000003 /* PathPoint.swift in Sources */,
+				100000000000000000000004 /* User.swift in Sources */,
+				100000000000000000000005 /* MainMapView.swift in Sources */,
+				100000000000000000000006 /* TerritoryOverlay.swift in Sources */,
+				100000000000000000000007 /* ClaimingHUD.swift in Sources */,
+				100000000000000000000008 /* AuthView.swift in Sources */,
+				100000000000000000000009 /* ProfileView.swift in Sources */,
+				100000000000000000000010 /* MapViewModel.swift in Sources */,
+				100000000000000000000011 /* LocationViewModel.swift in Sources */,
+				100000000000000000000012 /* AuthViewModel.swift in Sources */,
+				100000000000000000000013 /* LocationService.swift in Sources */,
+				100000000000000000000014 /* PolygonDetector.swift in Sources */,
+				100000000000000000000015 /* FirebaseService.swift in Sources */,
+				100000000000000000000016 /* TerritoryValidator.swift in Sources */,
+				100000000000000000000017 /* GeoUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DogKingdom/DogKingdom.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogKingdom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dog Kingdom";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Dog Kingdom needs your location to track your path while claiming territory and notify you about nearby territories.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dog Kingdom needs your location to track your path while claiming territory. Walk in circles to claim land!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dogkingdom.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DogKingdom/DogKingdom.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DogKingdom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dog Kingdom";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Dog Kingdom needs your location to track your path while claiming territory and notify you about nearby territories.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dog Kingdom needs your location to track your path while claiming territory. Walk in circles to claim land!";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dogkingdom.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800000000000000000000001 /* Build configuration list for PBXProject "DogKingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00000000000000000000001 /* Debug */,
+				B00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800000000000000000000003 /* Build configuration list for PBXNativeTarget "DogKingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00000000000000000000003 /* Debug */,
+				B00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		300000000000000000000001 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		300000000000000000000002 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 900000000000000000000001 /* Project object */;
+}

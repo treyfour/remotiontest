@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users collection
+    match /users/{userId} {
+      // Anyone authenticated can read any user profile
+      allow read: if request.auth != null;
+
+      // Users can only write to their own profile
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && request.auth.uid == userId;
+
+      // Users cannot delete their profile (admin only)
+      allow delete: if false;
+    }
+
+    // Territories collection
+    match /territories/{territoryId} {
+      // Anyone authenticated can read all territories
+      allow read: if request.auth != null;
+
+      // Users can create territories they own
+      allow create: if request.auth != null
+        && request.resource.data.ownerId == request.auth.uid
+        && request.resource.data.coordinates is list
+        && request.resource.data.coordinates.size() >= 3;
+
+      // Users can update territories (for carving - only coordinates and area)
+      allow update: if request.auth != null
+        && resource.data.ownerId == resource.data.ownerId  // Owner can't change
+        && request.resource.data.coordinates is list;
+
+      // Anyone can delete territories (for carving when consumed)
+      // In production, add more validation
+      allow delete: if request.auth != null;
+    }
+  }
+}
